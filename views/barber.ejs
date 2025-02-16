@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Shop Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .shop-header {
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+      }
+
+      .shop-header h1 {
+        font-size: 28px;
+        margin: 5px 0;
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .location-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .shop-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .details {
+        text-align: left;
+      }
+
+      .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .service-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .service-list li {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+      }
+
+      .queue-status {
+        display: inline-block;
+        background: #ffeb99;
+        color: #a67c00;
+        padding: 5px 12px;
+        font-size: 14px;
+        border-radius: 6px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .hours {
+        font-size: 14px;
+        color: #666;
+        margin: 10px 0;
+      }
+
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.3s ease-in-out;
+        margin-top: 15px;
+      }
+
+      .book-btn:hover {
+        background: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shop-header">
+        <h1>Barber</h1>
+        <div class="location">
+          <img src="location-icon.png" alt="Location" class="location-icon" />
+          <span>123 Main St, City</span>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <!-- Left: Shop Image -->
+        <div>
+          <img src="shop-image.jpg" alt="Barber Shop" class="shop-image" />
+        </div>
+
+        <!-- Right: Shop Details -->
+        <div class="details">
+          <h2 class="section-title">💈 Services & Prices</h2>
+          <ul class="service-list">
+            <li><span>✂️ Classic Haircut</span> <strong>$15</strong></li>
+            <li><span>🪒 Beard Trim</span> <strong>$10</strong></li>
+            <li><span>💈 Fade & Style</span> <strong>$20</strong></li>
+            <li><span>🧖 Hot Towel Shave</span> <strong>$12</strong></li>
+            <li><span>🎨 Hair Coloring</span> <strong>$25</strong></li>
+            <li><span>🚀 Kids' Haircut</span> <strong>$10</strong></li>
+          </ul>
+
+          <span class="queue-status">⏳ Queue: 3 Customers Ahead</span>
+
+          <h2 class="section-title">🕒 Opening Hours</h2>
+          <p class="hours">
+            🗓 Monday - Friday: 9:00 AM – 8:00 PM <br />
+            🗓 Saturday - Sunday: 10:00 AM – 6:00 PM
+          </p>
+
+          <a
+            href="/students/shops/barbershops/iitdhbarber/appointmentform"
+            class="book-btn"
+            >Book Appointment</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

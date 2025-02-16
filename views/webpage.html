@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barber Shops List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .shop-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            text-align: left;
+        }
+
+        .shop-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .shop-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .shop-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .location-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 6px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin: 8px 0;
+        }
+
+        .queue-status {
+            background: #ffeb99;
+            color: #a67c00;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .book-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .book-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Choose Your Barber Shop</h2>
+    
+    <div class="grid">
+        <!-- Barber Shop Card -->
+        <div class="shop-card">
+            <img src="shop-image.jpg" alt="Barber Shop" class="shop-img">
+            <h3 class="shop-name">Classic Cuts Barber</h3>
+            
+            <div class="location">
+                <img src="location-icon.png" alt="Location" class="location-icon">
+                <span>123 Main St, City</span>
+            </div>
+            
+            <p class="description">Premium cuts & friendly barbers. Walk-ins welcome!</p>
+
+            <span class="queue-status">⏳ Queue: 3 customers ahead</span>
+
+            <a href="shopdetails.html" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="shop-card">
+            <img src="shop-image.jpg" alt="Barber Shop" class="shop-img">
+            <h3 class="shop-name">Elite Barbers</h3>
+            
+            <div class="location">
+                <img src="location-icon.png" alt="Location" class="location-icon">
+                <span>45 Park Avenue, City</span>
+            </div>
+            
+            <p class="description">Trendy styles & expert barbers at your service.</p>
+
+            <span class="queue-status">⏳ Queue: 5 customers ahead</span>
+
+            <a href="shopdetails.html" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="shop-card">
+            <img src="shop-image.jpg" alt="Barber Shop" class="shop-img">
+            <h3 class="shop-name">Fresh Fades</h3>
+            
+            <div class="location">
+                <img src="location-icon.png" alt="Location" class="location-icon">
+                <span>78 Downtown Road, City</span>
+            </div>
+            
+            <p class="description">Sharp fades and detailed cuts by professionals.</p>
+
+            <span class="queue-status">⏳ Queue: 2 customers ahead</span>
+
+            <a href="shopdetails.html" class="book-btn">Book Now</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

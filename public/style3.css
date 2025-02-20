@@ -66,11 +66,17 @@ nav {
     border: none;
     border-radius: 20px;
     transition: 0.5s;
+    a{
+      text-decoration: none;
+    }
   }
   li:hover {
     background-color: antiquewhite;
     color: black;
     width: 120px;
+    a{
+      color: black;
+    }
   }
 }
 main {

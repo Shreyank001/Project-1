@@ -4,65 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thank You</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-      }
-      body {
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .message-container {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        max-width: 400px;
-        margin-bottom: 400px;
-      }
-      h2 {
-        color: #2ecc71;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 16px;
-        color: #333;
-        margin-bottom: 20px;
-      }
-      .home-button {
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        background: #3498db;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: 0.3s;
-      }
-      .home-button:hover {
-        background: #2980b9;
-      }
-    </style>
-    <link rel="stylesheet" href="/style4.css" />
+    <link rel="stylesheet" href="/style6.css" />
   </head>
   <body>
     <%- include('./partials/navbar') %>
-    <div class="message-container">
-      <h2>Thank You!</h2>
+    <main>
+      <h1>Thank You!</h1>
       <p>
         Thanks for filling out the form. Your name has been added to the list.
       </p>
       <a href="/students/shops/barbershops/iitdhbarber" class="home-button"
         >Go Back to Home</a
       >
-    </div>
+    </main>
+    <footer>
+      &copy Barber Shop. All Rights Reserverd.
+    </footer>
   </body>
 </html>

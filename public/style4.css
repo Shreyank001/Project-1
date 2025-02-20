@@ -67,11 +67,17 @@ nav {
     border: none;
     border-radius: 20px;
     transition: 0.5s;
+    a{
+      text-decoration: none;
+    }
   }
   li:hover {
     background-color: antiquewhite;
     color: black;
     width: 120px;
+    a{
+      color: black;
+    }
   }
 }
 main {
@@ -200,9 +206,14 @@ main {
   }
 }
 #btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   button {
-    width: 100%;
+    font-size: large;
+    width: 48%;
     height: 40px;
     border: none;
     border-radius: 10px;

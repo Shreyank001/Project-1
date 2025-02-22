@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Barber Form</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/style5.css">
-        <link 
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-    </head>
-    <body>
-        <%- include('./partials/navbar') %>
-        <main>
-            <form action="/students/shops/barbershops/iitdhbarber/appointmentform" method="post">
-                <h1>Book Your Appointment</h1>
-                <div>
-                    <label for="name">Your Name:</label>
-                    <input type="text" name="name" id="name" required placeholder="Enter your name...">
-                </div>
-                <div>
-                    <label for="number">Phone Number:</label>
-                    <input type="tel" name="number" id="number" pattern="[0-9]{10}" required placeholder="Mobile number here...">
-                </div>
-                <div>
-                    <label for="haircut">Preferred Haircut:</label>
-                    <select name="haircut" id="haircut">
-                        <option value="1">Haircut 1</option>
-                        <option value="2">Haircut 2</option>
-                        <option value="3">Haircut 3</option>
-                        <option value="4">Haircut 4</option>
-                    </select>
-                </div>
-                <input type="submit">
-            </form>
-        </main>
-        <footer>
-            &copy Barber Shop. All Rights Reserverd.
-        </footer>
-    </body>
+  <head>
+    <title>Barber Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/barberinput.css" />
+    <link rel="stylesheet" href="/HeaderFootercss/header.css" />
+    <link rel="stylesheet" href="/HeaderFootercss/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./partials/navbar') %>
+    <main>
+      <form
+        action="/students/shops/barbershops/iitdhbarber/appointmentform"
+        method="post"
+      >
+        <h1>Book Your Appointment</h1>
+        <div>
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name..."
+          />
+        </div>
+        <div>
+          <label for="number">Phone Number:</label>
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            pattern="[0-9]{10}"
+            required
+            placeholder="Mobile number here..."
+          />
+        </div>
+        <div>
+          <label for="haircut">Preferred Haircut:</label>
+          <select name="haircut" id="haircut">
+            <option value="1">Haircut 1</option>
+            <option value="2">Haircut 2</option>
+            <option value="3">Haircut 3</option>
+            <option value="4">Haircut 4</option>
+          </select>
+        </div>
+        <input type="submit" />
+      </form>
+    </main>
+    <footer>&copy Barber Shop. All Rights Reserverd.</footer>
+  </body>
 </html>

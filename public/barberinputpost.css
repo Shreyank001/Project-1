@@ -38,7 +38,6 @@ main {
   }
   h1 {
     color: rgb(226, 184, 46);
-    /* color: rgb(188, 0, 0); */
   }
   a {
     display: flex;

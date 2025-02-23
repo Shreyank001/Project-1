@@ -1,5 +1,7 @@
+const { Shops } = require("../Models/StaticData/AllShops");
+
 exports.getShops = (req, res, next) => {
-  res.render("./index");
+  res.render("./index", { Shops: Shops });
 };
 
 exports.getbarbershops = (req, res, next) => {
